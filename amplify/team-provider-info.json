@@ -13,12 +13,7 @@
     },
     "categories": {
       "auth": {
-        "amplifyapp636277f6": {
-          "userPoolId": "us-east-1_jhJ3Mou2c",
-          "userPoolName": "forMB",
-          "webClientId": "76omk9bjc7hui9ic5p6lfu4l3l",
-          "nativeClientId": "76omk9bjc7hui9ic5p6lfu4l3l"
-        }
+        "amplifyapp56c084c0": {}
       }
     }
   }
