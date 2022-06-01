@@ -1,37 +1,24 @@
 {
-  "staging": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyee7f74492e6a4-staging-35439-authRole",
-      "UnauthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyee7f74492e6a4-staging-35439-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyee7f74492e6a4-staging-35439-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyee7f74492e6a4-staging-35439-deployment",
-      "UnauthRoleName": "amplify-amplifyee7f74492e6a4-staging-35439-unauthRole",
-      "StackName": "amplify-amplifyee7f74492e6a4-staging-35439",
-      "StackId": "arn:aws:cloudformation:us-east-1:770791055978:stack/amplify-amplifyee7f74492e6a4-staging-35439/900f25d0-e15e-11ec-9045-12074008238f",
-      "AmplifyAppId": "d2xpd2axfk33c4"
-    },
-    "categories": {
-      "auth": {
-        "amplifyappcec44740": {}
-      }
-    }
-  },
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapp-dev-31705-authRole",
-      "UnauthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyapp-dev-31705-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyapp-dev-31705-authRole",
+      "AuthRoleName": "amplify-amplifyapp-dev-191533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyapp-dev-191533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::770791055978:role/amplify-amplifyapp-dev-191533-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyapp-dev-31705-deployment",
-      "UnauthRoleName": "amplify-amplifyapp-dev-31705-unauthRole",
-      "StackName": "amplify-amplifyapp-dev-31705",
-      "StackId": "arn:aws:cloudformation:us-east-1:770791055978:stack/amplify-amplifyapp-dev-31705/d8b91270-e17a-11ec-90f6-0eeb86d7cbcd",
-      "AmplifyAppId": "d2xpd2axfk33c4"
+      "DeploymentBucketName": "amplify-amplifyapp-dev-191533-deployment",
+      "UnauthRoleName": "amplify-amplifyapp-dev-191533-unauthRole",
+      "StackName": "amplify-amplifyapp-dev-191533",
+      "StackId": "arn:aws:cloudformation:us-east-1:770791055978:stack/amplify-amplifyapp-dev-191533/bf086ac0-e200-11ec-bbd3-0a7d84f7e3ab",
+      "AmplifyAppId": "d98gvbh4q7mkk"
     },
     "categories": {
       "auth": {
-        "amplifyapp0cbf9a9b": {}
+        "amplifyapp636277f6": {
+          "userPoolId": "us-east-1_jhJ3Mou2c",
+          "userPoolName": "forMB",
+          "webClientId": "76omk9bjc7hui9ic5p6lfu4l3l",
+          "nativeClientId": "76omk9bjc7hui9ic5p6lfu4l3l"
+        }
       }
     }
   }
