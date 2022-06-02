@@ -6,6 +6,9 @@ import { translations } from '@aws-amplify/ui-react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Home } from "./components/Home";
+import { ProtectedFirst } from './components/ProtectedFirst';
+import { ProtectedSecond } from './components/ProtectedSecond';
+import { Login } from './components/Login';
 
 // language settings 
 I18n.putVocabularies(translations);
@@ -29,6 +32,9 @@ function MyRoutes() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path='/protected1' element={<ProtectedFirst />} />
+          <Route path='/protected2' element={<ProtectedSecond />} />
+          <Route path='/login' element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -36,7 +42,11 @@ function MyRoutes() {
 }
 
 function App() {
-  return <MyRoutes />;
+  return (
+    <Authenticator.Provider>
+      <MyRoutes />
+    </Authenticator.Provider>
+  );
 }
 
 export default App;
