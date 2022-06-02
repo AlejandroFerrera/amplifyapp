@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useAuthenticator } from "@aws-amplify/ui-react";
-import { button } from "aws-amplify";
 
 export function Layout() {
 
@@ -31,7 +30,7 @@ export function Layout() {
                 )}
             </nav>
             <h1>Bienvenido a MasterBikes</h1>
-            <span>{route === 'authenticated' ? 'Hola ' + user.attributes.given_name : ''} </span>
+            <h3>{route === 'authenticated' ? 'Hola ' + user.attributes.given_name : ''} </h3>
             <Outlet />
         </>
     );

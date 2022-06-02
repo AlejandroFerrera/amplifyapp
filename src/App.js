@@ -9,6 +9,7 @@ import { Home } from "./components/Home";
 import { ProtectedFirst } from './components/ProtectedFirst';
 import { ProtectedSecond } from './components/ProtectedSecond';
 import { Login } from './components/Login';
+import { RequireAuth } from './components/RequiereAuth';
 
 // language settings 
 I18n.putVocabularies(translations);
@@ -32,8 +33,22 @@ function MyRoutes() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='/protected1' element={<ProtectedFirst />} />
-          <Route path='/protected2' element={<ProtectedSecond />} />
+          <Route
+            path='/protected1'
+            element={
+              <RequireAuth>
+                <ProtectedFirst />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/protected2'
+            element={
+              <RequireAuth>
+                <ProtectedSecond />
+              </RequireAuth>
+            }
+          />
           <Route path='/login' element={<Login />} />
         </Route>
       </Routes>
