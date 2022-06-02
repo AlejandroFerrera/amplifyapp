@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Authenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
 import { I18n } from 'aws-amplify';
 import { translations } from '@aws-amplify/ui-react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { Home } from "./components/Home";
+
+// language settings 
 I18n.putVocabularies(translations);
 I18n.setLanguage('es');
-
 I18n.putVocabularies({
   es: {
     'Sign In': 'Registrarse',
@@ -21,20 +23,20 @@ I18n.putVocabularies({
   }
 });
 
-function App() {
+function MyRoutes() {
   return (
-    <Authenticator>
-      {({ signOut, user }) => (
-      <div className="App">
-        <header className='App-header'>
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Hola {user.attributes.email} bienvenido a MasterBikes!</h1>
-          <button onClick={signOut}>Cerrar Sesion</button>
-        </header>
-      </div>
-      )}
-    </Authenticator>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
+}
+
+function App() {
+  return <MyRoutes />;
 }
 
 export default App;
