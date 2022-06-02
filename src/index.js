@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Amplify} from 'aws-amplify';
 import config from './aws-exports';
+import { I18n } from 'aws-amplify';
+I18n.setLanguage('es');
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
