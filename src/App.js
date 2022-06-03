@@ -1,15 +1,16 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
+import './styles/styleAlejandro.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { I18n } from 'aws-amplify';
 import { translations } from '@aws-amplify/ui-react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./components/Layout";
-import { Home } from "./components/Home";
-import { ProtectedFirst } from './components/ProtectedFirst';
-import { ProtectedSecond } from './components/ProtectedSecond';
-import { Login } from './components/Login';
-import { RequireAuth } from './components/RequiereAuth';
+import { Layout } from "./components/pages/Layout";
+import { Home } from "./components/templates/Home";
+import { Arriendo } from "./components/templates/Arriendo"
+import { Reparacion } from './components/templates/Reparacion';
+import { Login } from './components/templates/Login';
+import { RequireAuth } from './components/atoms/RequiereAuth';
 
 // language settings 
 I18n.putVocabularies(translations);
@@ -37,7 +38,7 @@ function MyRoutes() {
             path='/protected1'
             element={
               <RequireAuth>
-                <ProtectedFirst />
+                <Arriendo />
               </RequireAuth>
             }
           />
@@ -45,7 +46,7 @@ function MyRoutes() {
             path='/protected2'
             element={
               <RequireAuth>
-                <ProtectedSecond />
+                <Reparacion />
               </RequireAuth>
             }
           />
