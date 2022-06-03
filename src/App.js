@@ -10,7 +10,7 @@ import { Home } from "./components/templates/Home";
 import { Arriendo } from "./components/templates/Arriendo"
 import { Reparacion } from './components/templates/Reparacion';
 import { Login } from './components/templates/Login';
-import { RequireAuth } from './components/atoms/RequiereAuth';
+
 
 // language settings 
 I18n.putVocabularies(translations);
@@ -33,21 +33,21 @@ function MyRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index path='/home' element={<Home />} />
           <Route
             path='/protected1'
             element={
-              <RequireAuth>
+              // <RequireAuth>
                 <Arriendo />
-              </RequireAuth>
+              // {/* </RequireAuth> */}
             }
           />
           <Route
             path='/protected2'
             element={
-              <RequireAuth>
+              // <RequireAuth>
                 <Reparacion />
-              </RequireAuth>
+              // </RequireAuth>
             }
           />
           <Route path='/login' element={<Login />} />
