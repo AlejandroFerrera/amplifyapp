@@ -1,4 +1,4 @@
-export default dataServices = [
+const DataServices = [
   {
     image:
       "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/static/mockups/service1.png",
@@ -16,3 +16,5 @@ export default dataServices = [
     routeLink: "protected2",
   },
 ];
+
+export default DataServices;

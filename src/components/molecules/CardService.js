@@ -11,14 +11,14 @@ const ServiceCard = ({
 }) => (
   <Row>
     <Col md={12}>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={image} />
-        <Card.Body>
-          <Card.Title>{cardTitle}</Card.Title>
+      <Card className="card-service">
+        <Card.Body className="card-service-body">
+          <Card.Img variant="top" src={image} className="card-service-image" />
+          <Card.Title className="card-service-title">{cardTitle}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button>
-            <Link to={routeLink}>{textLink}</Link>
-          </Button>
+          <Link to={routeLink} className="card-service-link">
+            <Button className="card-service-button">{textLink}</Button>
+          </Link>
         </Card.Body>
       </Card>
     </Col>

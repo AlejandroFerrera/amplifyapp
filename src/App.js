@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import './styles/styleAlejandro.css';
+import './styles/styleNicolas.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { I18n } from 'aws-amplify';
 import { translations } from '@aws-amplify/ui-react';
