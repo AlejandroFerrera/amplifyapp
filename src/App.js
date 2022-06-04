@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import './styles/styleAlejandro.css';
+import './styles/styleNicolas.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { I18n } from 'aws-amplify';
 import { translations } from '@aws-amplify/ui-react';
@@ -10,7 +11,7 @@ import { Home } from "./components/templates/Home";
 import { Arriendo } from "./components/templates/Arriendo"
 import { Reparacion } from './components/templates/Reparacion';
 import { Login } from './components/templates/Login';
-import {RequireAuth} from './components/atoms/RequireAuth';
+import { RequireAuth } from './components/atoms/RequireAuth';
 
 
 // language settings 
@@ -38,9 +39,9 @@ function MyRoutes() {
           <Route
             path='/protected1'
             element={
-               <RequireAuth>
+              <RequireAuth>
                 <Arriendo />
-               </RequireAuth>
+              </RequireAuth>
             }
           />
           <Route

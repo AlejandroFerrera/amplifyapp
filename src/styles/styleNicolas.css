@@ -1,0 +1,36 @@
+#services {
+    margin-top: 50px;
+}
+
+.card-group-services {
+    margin-top: 30px !important;
+}
+
+.card-service {
+    margin: 12px;
+    width: "18rem";
+    border: none !important;
+
+}
+
+.card-service-title {
+    border-bottom: black 2px solid;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+.card-service-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-service-image {
+    margin-bottom: 10px;
+    border-top-left-radius: 0% !important;
+    border-top-right-radius: 0% !important;
+}
+
+.card-service-button {
+    border-radius: 0 !important;
+    margin-top: 20px !important;
+}
