@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto:wght@700&display=swap');
+
+nav {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: .9rem;
+    margin-bottom: .9rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: black !important;
+    position: relative;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: #174C4F !important;
+    border-radius: 20px;
+    transition: 100ms;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    color: white;
+    background-image: url('../images/bicicalle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.jumbotron h3 {
+    z-index: 1;
+    opacity: .95;
+}
+
+.jumbotron .cortina {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+}
+
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
