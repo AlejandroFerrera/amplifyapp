@@ -10,6 +10,7 @@ import { Home } from "./components/templates/Home";
 import { Arriendo } from "./components/templates/Arriendo"
 import { Reparacion } from './components/templates/Reparacion';
 import { Login } from './components/templates/Login';
+import {RequireAuth} from './components/atoms/RequireAuth';
 
 
 // language settings 
@@ -37,17 +38,17 @@ function MyRoutes() {
           <Route
             path='/protected1'
             element={
-              // <RequireAuth>
+               <RequireAuth>
                 <Arriendo />
-              // {/* </RequireAuth> */}
+               </RequireAuth>
             }
           />
           <Route
             path='/protected2'
             element={
-              // <RequireAuth>
+              <RequireAuth>
                 <Reparacion />
-              // </RequireAuth>
+              </RequireAuth>
             }
           />
           <Route path='/login' element={<Login />} />

@@ -35,9 +35,7 @@ export function Header() {
                         <Nav.Link href="/">Contáctanos</Nav.Link>
                     </Nav>
                     {route !== "authenticated" ? (
-                        <>
-                            <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>
-                        </>
+                        <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>
                     ) : (
                         <Button onClick={() => { logOut() }}>Cerrar Sesión</Button>
                     )}
