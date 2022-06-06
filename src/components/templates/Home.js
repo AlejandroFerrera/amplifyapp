@@ -19,7 +19,6 @@ export function Home() {
                 imgUrl='../images/holdingbike.jpg'
             />
             <Services />
-            <Footer />
         </>
     )
 }

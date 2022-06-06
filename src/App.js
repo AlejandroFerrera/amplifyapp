@@ -6,12 +6,13 @@ import { Authenticator } from '@aws-amplify/ui-react';
 import { I18n } from 'aws-amplify';
 import { translations } from '@aws-amplify/ui-react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./components/pages/Layout";
 import { Home } from "./components/templates/Home";
 import { Arriendo } from "./components/templates/Arriendo"
 import { Reparacion } from './components/templates/Reparacion';
 import { Login } from './components/templates/Login';
 import { RequireAuth } from './components/atoms/RequireAuth';
+import { Header } from './components/organisms/Header';
+import { Footer } from './components/organisms/Footer';
 
 
 // language settings 
@@ -33,9 +34,9 @@ I18n.putVocabularies({
 function MyRoutes() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index path='/home' element={<Home />} />
+        <Route path="/" element={<Home />} />
           <Route
             path='/protected1'
             element={
@@ -53,8 +54,8 @@ function MyRoutes() {
             }
           />
           <Route path='/login' element={<Login />} />
-        </Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

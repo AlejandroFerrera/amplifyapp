@@ -16,7 +16,7 @@ export function Header() {
 
     function logOut() {
         signOut();
-        navigate("/home");
+        navigate("/");
     }
 
 
@@ -29,10 +29,10 @@ export function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                     <Nav className="me-2">
-                        <Nav.Link onClick={() => navigate("/home")}>Inicio</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")} href="#about">Nosotros</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")} href="#services">Servicios</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")} href="#footer">Contáctanos</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/")}>Inicio</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/")} href="#about">Nosotros</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/")} href="#services">Servicios</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/")} href="#footer">Contáctanos</Nav.Link>
                     </Nav>
                     {route !== "authenticated" ? (
                         <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>
