@@ -1,7 +1,5 @@
-
-nav {
-  margin-top: .9rem;
-  margin-bottom: .9rem;
+html {
+  scroll-behavior: smooth
 }
 
 /* .auth-wrapper {

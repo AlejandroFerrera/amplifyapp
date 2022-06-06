@@ -2,11 +2,11 @@ import React from "react";
 import { Presentation } from "../organisms/Presentation";
 import Services from "../organisms/Services";
 import { About } from "../organisms/About";
+import { Footer } from "../organisms/Footer";
 
 
-const aboutDescription = `La fábrica de bicicletas "San Diego" se dedica desde hace 30 años a la fabricación de
-                     diversos tipos de bicicletas y triciclos. Está ubicada en el barrio San Diego y es reconocida 
-                     como una de las más antiguas del sector.`;
+const aboutDescription = `“MasterBikes” nace bajo la premisa de un sueño alcanzado por la gran fábrica de bicicletas “San Diego” del antiguo barrio de Santiago de Chile. 
+Gracias a ustedes hemos comprendido la inclusión de “Masterbikes”, como nueva visión de servicio. Seguiremos dando todo lo mejor para que ustedes sigan creyendo en nosotros y nuestros servicios. 							`;
 
 
 export function Home() {
@@ -18,7 +18,8 @@ export function Home() {
                 description={aboutDescription}
                 imgUrl='../images/holdingbike.jpg'
             />
-            <Services/>
+            <Services />
+            <Footer />
         </>
     )
 }

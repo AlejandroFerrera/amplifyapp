@@ -30,9 +30,9 @@ export function Header() {
                 <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                     <Nav className="me-2">
                         <Nav.Link onClick={() => navigate("/home")}>Inicio</Nav.Link>
-                        <Nav.Link onClick={() => navigate("#about")}>Nosotros</Nav.Link>
-                        <Nav.Link href="/">Servicios</Nav.Link>
-                        <Nav.Link href="/">Contáctanos</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/home")} href="#about">Nosotros</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/home")} href="#services">Servicios</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/home")} href="#footer">Contáctanos</Nav.Link>
                     </Nav>
                     {route !== "authenticated" ? (
                         <Button onClick={() => navigate("/login")}>Iniciar Sesión</Button>

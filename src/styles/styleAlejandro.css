@@ -78,7 +78,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.about__text h1, .about__text p {
+
+.about__text h1,
+.about__text p {
     align-self: center;
     width: 60%;
 }
@@ -87,7 +89,7 @@ h1 {
     font-size: 20px;
 }
 
-.about__img{
+.about__img {
     background-image: url('../images/holdingbike.jpg');
     position: absolute;
     right: 120px;
@@ -95,4 +97,62 @@ h1 {
     width: 450px;
     height: 350px;
     background-size: cover;
+}
+
+#footer {
+    margin-top: 100px;
+    background-color: rgb(247, 247, 247);
+    /* display: flex;
+    align-items: center; */
+}
+
+#footer h2 {
+    color: #174C4F;
+}
+
+.footer__contacto,
+.footer__social,
+.footer__devtools {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+    color: #174C4F;
+    margin-top: 20px;
+    margin-left: 6.5px;
+    margin-right: 25px;
+    transform: scale(2.2);
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width:1200px) {
+    .about__img {
+        right: 20px;
+    }
+
+}
+
+@media(max-width:990px) {
+    .about__img {
+        display: none;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .about__text h1,
+    .about__text p {
+        width: 90%;
+    }
 }
