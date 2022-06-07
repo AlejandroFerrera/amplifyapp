@@ -57,10 +57,7 @@ h1 {
     opacity: .4;
 }
 
-.footer__contacto {
-    display: flex;
-    flex-direction: column;
-}
+
 
 #about {
     margin-top: 100px;
@@ -128,6 +125,11 @@ h1 {
     transform: scale(2.2);
 }
 
+.welcome {
+    text-align: center;
+    margin-bottom: 300px;
+}
+
 
 
 
@@ -155,4 +157,26 @@ h1 {
     .about__text p {
         width: 90%;
     }
+}
+
+@media(max-width: 768px) {
+    .footer__contacto, .footer__devtools, .footer__social {
+        text-align: center !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .nav-link:hover {
+        color: black !important;
+        text-decoration: underline !important;
+        background-color: transparent !important;
+    }
+}
+
+.amplify-button[data-variation='primary'] {
+    background: #174C4F;
+  }
+
+.auth-wrapper{
+    transform: scale(1.02);
 }

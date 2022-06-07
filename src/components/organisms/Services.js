@@ -1,22 +1,24 @@
 import React from "react";
 import { Row, Col, CardGroup, Container } from "react-bootstrap";
 import ServiceCard from "../molecules/CardService";
+import arrendar from "../../images/arrendar.png";
+import reparar from "../../images/reparar.png";
 
 const data = [
   {
     image:
-      "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/static/mockups/service1.png",
+      arrendar,
     cardTitle: "Arriendo",
-    description: "Arriendo cuando quieras mi rey",
+    description: "Solicita arriendos de las mejores bicicletas de MasterBikes a precios insuperables.",
     textLink: "Arrendar",
     routeLink: "protected1",
   },
   {
     image:
-      "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/static/mockups/service2.png",
+      reparar,
     cardTitle: "Reparaciones",
-    description: "Te reparo lo que quieras mi rey",
-    textLink: "Solicitar",
+    description: "Deja tu bicicleta en manos de los mejores y monitorea el estado en todo momento.",
+    textLink: "Reparar",
     routeLink: "protected2",
   },
 ];
@@ -24,22 +26,24 @@ const data = [
 const Services = () => (
   <Container id="services">
     <Row>
-        <Col md={12}>
-            <h1 className="d-flex justify-content-center">Servicios</h1>
-        </Col>
+      <Col md={12}>
+        <h1 className="d-flex justify-content-center">Servicios</h1>
+      </Col>
     </Row>
     <Row className="card-group-services">
-      <Col md={12}>
+      <Col>
         <CardGroup>
           {data.map((dato) => {
             return (
-              <ServiceCard
-                image={dato.image}
-                cardTitle={dato.cardTitle}
-                description={dato.description}
-                textLink={dato.textLink}
-                routeLink={dato.routeLink}
-              />
+              <Col lg={6} md={6} sm={12}>
+                <ServiceCard
+                  image={dato.image}
+                  cardTitle={dato.cardTitle}
+                  description={dato.description}
+                  textLink={dato.textLink}
+                  routeLink={dato.routeLink}
+                />
+              </Col>
             );
           })}
         </CardGroup>

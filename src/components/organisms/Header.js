@@ -6,9 +6,8 @@ import { Logo } from "../atoms/Logo";
 
 export function Header() {
 
-    const { route, user, signOut } = useAuthenticator((context) => [
+    const { route, signOut } = useAuthenticator((context) => [
         context.route,
-        context.user,
         context.signOut
     ]);
 

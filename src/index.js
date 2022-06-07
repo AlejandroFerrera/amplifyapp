@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './App';
+import App from './components/pages/App';
 import reportWebVitals from './reportWebVitals';
 import {Amplify} from 'aws-amplify';
 import { createRoot } from 'react-dom/client';

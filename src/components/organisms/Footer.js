@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { SiAwsamplify, SiAmazon, SiGit, SiGithub, SiReact, SiBootstrap, SiReactrouter } from "react-icons/si";
-import { Cognito } from "../atoms/Cognito";
+import { CognitoLogo } from "../atoms/CognitoLogo";
 
 export function Footer() {
     return (
@@ -27,7 +27,7 @@ export function Footer() {
                 <Col md={4} className="footer__devtools">
                     <h2>Tecnologías utilizadas:</h2>
                     <span>Despliegue del servidor: <SiAmazon /> <SiAwsamplify /> </span>
-                    <span>Autenticación: <Cognito /></span>
+                    <span>Autenticación: <CognitoLogo /></span>
                     <span>Versionado: <SiGit /> <SiGithub /> </span>
                     <span>Desarrollo: <SiReact /> <SiBootstrap /> <SiReactrouter /> </span>
 
