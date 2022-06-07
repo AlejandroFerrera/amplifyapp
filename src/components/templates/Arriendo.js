@@ -11,7 +11,7 @@ export function Arriendo() {
     return (
         <>
             <h1 className="welcome">Hola {user.attributes.given_name} {user.attributes.family_name}</h1>
-            <h3 className="welcome">Se encuentra en la seccion para realizar un arriendo</h3>
+            <h3 className="welcome">Se encuentra en la seccion para realizar un arriendo!!</h3>
         </>
     )
 }
