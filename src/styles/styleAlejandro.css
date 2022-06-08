@@ -22,7 +22,6 @@ h1 {
     color: white !important;
     background-color: #174C4F !important;
     border-radius: 20px;
-    transition: 100ms;
 }
 
 .jumbotron {
@@ -99,8 +98,6 @@ h1 {
 #footer {
     margin-top: 100px;
     background-color: rgb(247, 247, 247);
-    /* display: flex;
-    align-items: center; */
 }
 
 #footer h2 {
@@ -198,4 +195,11 @@ h1 {
 }
 .add-button {
     margin-top: 40px !important;
+}
+
+.repair-form {
+    padding: 15px;
+    border: #174C4F 2px solid;
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.1);
 }
