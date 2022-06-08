@@ -15,6 +15,7 @@ import { Header } from '../organisms/Header';
 import { Footer } from '../organisms/Footer';
 
 
+
 // language settings 
 I18n.putVocabularies(translations);
 I18n.setLanguage('es');
@@ -38,26 +39,26 @@ function MyRoutes() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path='/protected1'
-          element={
-            <RequireAuth>
-              <Arriendo />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path='/protected2'
-          element={
-            <RequireAuth>
-              <Reparacion />
-            </RequireAuth>
-          }
-        />
-        <Route path='/login' element={<Login />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path='/protected1'
+            element={
+              <RequireAuth>
+                <Arriendo />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/protected2'
+            element={
+              <RequireAuth>
+                <Reparacion />
+              </RequireAuth>
+            }
+          />
+          <Route path='/login' element={<Login />} />
+        </Routes>
       <Footer />
     </BrowserRouter>
   );

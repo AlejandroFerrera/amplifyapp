@@ -3,7 +3,7 @@ import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react";
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router";
 import "@aws-amplify/ui-react/styles.css";
-import { useTheme, View, Image } from '@aws-amplify/ui-react';
+import { useTheme, View } from '@aws-amplify/ui-react';
 
 import { IconLogo } from "../atoms/IconLogo";
 

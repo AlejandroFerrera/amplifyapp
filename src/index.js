@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './components/pages/App';
 import reportWebVitals from './reportWebVitals';
-import {Amplify} from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import { createRoot } from 'react-dom/client';
 import config from './aws-exports';
 import 'bootstrap/dist/css/bootstrap.min.css';

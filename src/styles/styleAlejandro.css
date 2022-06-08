@@ -127,7 +127,12 @@ h1 {
 
 .welcome {
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: 35px;
+}
+
+.table-title {
+    text-align: center;
+
 }
 
 
@@ -179,4 +184,18 @@ h1 {
 
 .auth-wrapper{
     transform: scale(1.02);
+}
+
+.amplify-table {
+    width: 80% !important;
+    margin: auto !important;
+}
+.arriendos-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.add-button {
+    margin-top: 40px !important;
 }
