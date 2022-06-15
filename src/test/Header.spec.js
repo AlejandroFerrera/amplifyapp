@@ -10,7 +10,6 @@ test("Se renderiza correctamente la seccion de Servicios", () => {
     <Authenticator.Provider>
       <BrowserRouter>
         <Header />
-        <Routes></Routes>
       </BrowserRouter>
     </Authenticator.Provider>
   );

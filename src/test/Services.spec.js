@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import arrendar from "../images/arrendar.png";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from "../components/organisms/Services";
 
@@ -11,9 +10,7 @@ test
 
     const component = render(<BrowserRouter>
       <Routes>
-        <Route path="/" element={
-            <Services></Services>
-        } />
+        <Route path="/" element={<Services></Services>} />
       </Routes>
     </BrowserRouter>);
     component.getAllByText('Servicios')
