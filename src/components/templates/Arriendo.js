@@ -1,20 +1,13 @@
 import React from "react";
-import { Button, useAuthenticator } from "@aws-amplify/ui-react";
-
-
-import {
-    Table,
-    TableCell,
-    TableBody,
-    TableHead,
-    TableRow,
-} from '@aws-amplify/ui-react';
+import { useAuthenticator } from "@aws-amplify/ui-react";
+import { FormButton } from "../molecules/FormButton";
+import { Table, TableCell, TableBody, TableHead, TableRow } from '@aws-amplify/ui-react';
 
 function getRandomId() {
     return (Math.random() * 9999999).toFixed();
 }
 
-export const BasicExample = ({
+export const RentsTable = ({
     caption,
     highlightOnHover,
     size,
@@ -87,13 +80,8 @@ export function Arriendo() {
             <h1 className="welcome">Hola {user.attributes.given_name} </h1>
             <main className="arriendos-container">
                 <h4 className="table-title">Arriendos vigentes:</h4>
-                <BasicExample caption="" highlightOnHover="true" size="Large" variation="striped" />
-                <Button
-                    variation="primary"
-                    size="large"
-                    className="add-button">
-                    Agregar arriendo+
-                </Button>
+                <RentsTable caption="" highlightOnHover="true" size="Large" variation="striped" />
+                <FormButton text="Agregar arriendo+" />
             </main>
         </>
     )
