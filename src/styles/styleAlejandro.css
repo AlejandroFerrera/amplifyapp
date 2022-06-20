@@ -66,6 +66,7 @@ h1 {
 }
 
 .about__text {
+    margin-left: 11px;
     background-color: rgb(247, 247, 247);
     height: 100%;
     width: 60%;

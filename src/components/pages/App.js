@@ -28,7 +28,10 @@ I18n.putVocabularies({
     'Family Name': 'Apellido',
     'Given Name': 'Nombre',
     'Send code': 'Enviar código',
-    'Enter your email': 'Introduzca su correo'
+    'Enter your email': 'Introduzca su correo',
+    'Your code is on the way. To log in, enter the code we emailed to': 'Tu código está en camino, para registrarte entra el código que te enviamos',
+    'We Emailed You': 'Te enviamos un correo',
+    'Enter your code': 'Ingresa tu código'
   }
 });
 

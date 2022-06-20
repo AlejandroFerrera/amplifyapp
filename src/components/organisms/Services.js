@@ -33,9 +33,9 @@ const Services = () => (
     <Row className="card-group-services">
       <Col>
         <CardGroup>
-          {data.map((dato) => {
+          {data.map((dato, index) => {
             return (
-              <Col lg={6} md={6} sm={12}>
+              <Col key={index} lg={6} md={6} sm={12}>
                 <ServiceCard
                   image={dato.image}
                   cardTitle={dato.cardTitle}
